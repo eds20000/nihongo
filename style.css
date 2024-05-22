@@ -74,7 +74,7 @@ td,th{
 
 .result{
     position: fixed;
-    right: 0;
+    right: 40%;
     top:0;
     display: flex;
     place-items: center;
