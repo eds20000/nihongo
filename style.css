@@ -149,6 +149,11 @@ td,th{
         right:10px;
         bottom: 20px;
     }
+    .result-btn,
+    .result-btn_remove,
+    .result-btn_score,.score{
+    font-size: 15px;
+}
 }
 
 .test-right{
