@@ -1,5 +1,5 @@
 body{
-    padding: 50px;
+    padding: 100px 50px;
 }
 
 h1,h2{
@@ -39,7 +39,27 @@ input{
     width: 100%;
     height: 100%;
     justify-content: center;
+    position: relative;
 }
+
+td{
+    position: relative;
+}
+
+.score-input{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    height: 30px;
+    border: 1px solid rgb(11, 4, 109);
+    display: none;
+    &.hide{
+        display: block;
+    }
+}
+
+
 
 td,th{
     margin: 0;
@@ -74,16 +94,16 @@ td,th{
 
 .result{
     position: fixed;
-    right: 0;
-    top:10px;
+    right: 10px;
+    bottom:10px;
     display: flex;
     place-items: center;
-    gap: 20px  ;
+    gap: 10px  ;
     background-color: white;
     border: 2px solid #000000;
     padding: 10px;
     p{
-        margin:10px auto;
+        margin:0;
     }
 }
 .btn{
@@ -92,7 +112,8 @@ td,th{
 }
  
 .result-btn,
-.result-btn_remove{
+.result-btn_remove,
+.result-btn_score{
     background-color: rgb(150, 143, 143);
     font-size: 20px;
     padding: 0 15px;
@@ -102,7 +123,8 @@ td,th{
 
 
 .result-btn:hover,
-.result-btn_remove:hover{
+.result-btn_remove:hover,
+.result-btn_score:hover{
     color: white ;
     border-color: white;
 }
@@ -115,7 +137,7 @@ td,th{
 
 @media (max-width : 1024px){
     body{
-        padding:0;
+        padding:10px 10px 200px;
         margin: 0;
     }
     .test{
@@ -123,7 +145,9 @@ td,th{
         margin-right: 10px;
     }
     .result{
-        width: 100%;
+        left: 10px;
+        right:10px;
+        bottom: 20px;
     }
 }
 
