@@ -54,9 +54,10 @@ td{
     height: 30px;
     border: 1px solid rgb(11, 4, 109);
     display: none;
-    &.hide{
-        display: block;
-    }
+    
+}
+.score-input.hide{
+    display:block;
 }
 
 
